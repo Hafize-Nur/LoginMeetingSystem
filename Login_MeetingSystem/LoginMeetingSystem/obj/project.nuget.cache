@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "MFbVD6f+L1oMuR62cCBwkrg3P0qS5WChHBza3hZvm2ZZiuD84lbAqNhlb/5R2aY2SOyj+uEISuCdQmpjqGytGQ==",
+  "dgSpecHash": "wYYUo9O8ARX1UdsTr+sfZoG9wz7Kv8bo8jO5Tqw+OMOBE5PvKjZr7jBVyjaRmSpvUqQZVdGNDflG+j9deauiqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\Login_MeetingSystem\\LoginMeetingSystem\\LoginMeetingSystem.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\ASUS\\Desktop\\LoginMeetingSystem\\Login_MeetingSystem\\LoginMeetingSystem\\LoginMeetingSystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
+  ],
   "logs": []
 }

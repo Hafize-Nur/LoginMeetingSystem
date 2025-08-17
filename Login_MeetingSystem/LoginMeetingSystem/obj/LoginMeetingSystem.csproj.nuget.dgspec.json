@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\Login_MeetingSystem\\LoginMeetingSystem\\LoginMeetingSystem.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\LoginMeetingSystem\\Login_MeetingSystem\\LoginMeetingSystem\\LoginMeetingSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\Login_MeetingSystem\\LoginMeetingSystem\\LoginMeetingSystem.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\LoginMeetingSystem\\Login_MeetingSystem\\LoginMeetingSystem\\LoginMeetingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\Login_MeetingSystem\\LoginMeetingSystem\\LoginMeetingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\LoginMeetingSystem\\Login_MeetingSystem\\LoginMeetingSystem\\LoginMeetingSystem.csproj",
         "projectName": "LoginMeetingSystem",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\Login_MeetingSystem\\LoginMeetingSystem\\LoginMeetingSystem.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\LoginMeetingSystem\\Login_MeetingSystem\\LoginMeetingSystem\\LoginMeetingSystem.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\Login_MeetingSystem\\LoginMeetingSystem\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\LoginMeetingSystem\\Login_MeetingSystem\\LoginMeetingSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +37,8 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",
@@ -50,6 +50,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.15, 7.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.15, 7.0.15]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.15, 7.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.15, 7.0.15]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -58,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
