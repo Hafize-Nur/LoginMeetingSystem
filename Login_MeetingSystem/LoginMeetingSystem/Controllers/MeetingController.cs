@@ -2,8 +2,8 @@ using LoginMeetingSystem.Data;
 using LoginMeetingSystem.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
-namespace MeetingApp.Controllers
+using System.Security.Claims;
+namespace LoginMeetingSystem.Controllers
 {
     [Authorize]
     public class MeetingController : Controller
@@ -17,17 +17,33 @@ namespace MeetingApp.Controllers
             _env = env;
         }
 
+        //Veritabanındaki kayıtlı toplantıları gösterme
         public IActionResult Index()
         {
-            var userId = int.Parse(User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier).Value);
-            var meetings = _context.Meetings.Where(m => m.UserId == userId).ToList();
+            if (!User.Identity.IsAuthenticated)
+                return RedirectToAction("Login", "User");
+
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+            if (userIdClaim == null)
+                return RedirectToAction("Login", "User");
+
+            int userId = int.Parse(userIdClaim.Value);
+            var meetings = _context.Meetings
+                            .Where(m => m.UserId == userId)
+                            .ToList();
+
             return View(meetings);
         }
-
+        // GET: Create form
         [HttpGet]
-        public IActionResult Create() => View();
+        public IActionResult Create()
+        {
+            return View();
+        }
 
+        // POST: Create form submit
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Create(Meeting meeting, List<IFormFile> documents)
         {
             var userId = int.Parse(User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier).Value);
@@ -66,10 +82,20 @@ namespace MeetingApp.Controllers
         [HttpPost]
         public IActionResult Edit(Meeting meeting)
         {
-            _context.Meetings.Update(meeting);
+            var existingMeeting = _context.Meetings.Find(meeting.Id);
+            if (existingMeeting == null)
+                return NotFound();
+
+
+            existingMeeting.Title = meeting.Title;
+            existingMeeting.Description = meeting.Description;
+            existingMeeting.StartDate = meeting.StartDate;
+            existingMeeting.EndDate = meeting.EndDate;
+
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
+
 
         public IActionResult Delete(int id)
         {

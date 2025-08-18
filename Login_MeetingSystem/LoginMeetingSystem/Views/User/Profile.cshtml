@@ -1,7 +1,7 @@
 @model LoginMeetingSystem.Models.User
 
 @{
-    ViewData["Title"] = "Hesabım";
+    ViewData["Title"] = "Profle";
 }
 
 <h2>Hoşgeldiniz, @Model.FirstName @Model.LastName</h2>
@@ -9,10 +9,12 @@
 <p>Email: @Model.Email</p>
 <p>Telefon: @Model.Phone</p>
 
-<a asp-controller="Meeting" asp-action="Index" class="btn btn-primary">
-    Toplantı İşlemleri
-</a>
+<p>
+    <a asp-controller="Meeting" asp-action="Index" class="btn btn-primary">
+        Toplantı İşlemleri
+    </a>
+</p>
 
-<a asp-controller="User" asp-action="Logout" class="btn btn-secondary">
+<a asp-controller="Home" asp-action="Index" class="btn btn-secondary">
     Çıkış Yap
 </a>

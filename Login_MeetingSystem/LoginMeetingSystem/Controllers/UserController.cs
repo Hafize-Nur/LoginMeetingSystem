@@ -84,11 +84,5 @@ namespace LoginMeetingSystem.Controllers
             return View(user);
         }
 
-        [HttpGet]
-        public IActionResult Logout()
-        {
-            HttpContext.Session.Remove("UserId");
-            return RedirectToAction("Login");
-        }
     }
 }
