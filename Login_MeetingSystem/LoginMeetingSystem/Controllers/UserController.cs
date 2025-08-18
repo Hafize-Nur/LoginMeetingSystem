@@ -62,11 +62,33 @@ namespace LoginMeetingSystem.Controllers
             {
                 // giriş başarılı
                 TempData["SuccessMessage"] = "Giriş başarılı!";
-                return RedirectToAction("Index", "Home");
+                HttpContext.Session.SetInt32("UserId", user.Id);
+                return RedirectToAction("Profile", "User");
             }
 
             ViewBag.Error = "Email veya şifre hatalı!";
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult Profile()
+        {
+            var userId = HttpContext.Session.GetInt32("UserId");
+            if (userId == null)
+                return RedirectToAction("Login");
+
+            var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+            if (user == null)
+                return RedirectToAction("Login");
+
+            return View(user);
+        }
+
+        [HttpGet]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("UserId");
+            return RedirectToAction("Login");
         }
     }
 }
