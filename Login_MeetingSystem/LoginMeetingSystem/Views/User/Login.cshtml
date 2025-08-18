@@ -18,5 +18,11 @@
         <span asp-validation-for="Password" class="text-danger"></span>
     </div>
 
-    <button type="submit" class="btn btn-primary">Login</button>
+    <button type="submit" class="btn btn-primary">Giriş Yap</button>
+    <p> <a asp-controller="User" asp-action="Register">Hesabınız mı yok? Kayıt olmak için tıklayınız</a>.</p>
 </form>
+
+@if (ViewBag.Error != null)
+{
+    <p class="text-danger">@ViewBag.Error</p>
+}

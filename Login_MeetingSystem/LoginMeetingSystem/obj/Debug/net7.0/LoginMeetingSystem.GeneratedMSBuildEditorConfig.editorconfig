@@ -9,59 +9,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LoginMeetingSystem
 build_property.RootNamespace = LoginMeetingSystem
-build_property.ProjectDir = C:\Users\ASUS\Desktop\LoginMeetingSystem\Login_MeetingSystem\LoginMeetingSystem\
+build_property.ProjectDir = c:\Users\ASUS\Desktop\LoginMeetingSystem\Login_MeetingSystem\LoginMeetingSystem\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ASUS\Desktop\LoginMeetingSystem\Login_MeetingSystem\LoginMeetingSystem
+build_property.MSBuildProjectDirectory = c:\Users\ASUS\Desktop\LoginMeetingSystem\Login_MeetingSystem\LoginMeetingSystem
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/Home/Index.cshtml]
+[c:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/Home/Privacy.cshtml]
+[c:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/Meeting/Create.cshtml]
+[c:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/Meeting/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/Meeting/Edit.cshtml]
+[c:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/Meeting/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/Meeting/Index.cshtml]
+[c:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/Meeting/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/Shared/Error.cshtml]
+[c:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/User/Login.cshtml]
+[c:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/User/Register.cshtml]
+[c:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/User/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/_ViewImports.cshtml]
+[c:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/_ViewStart.cshtml]
+[c:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/Shared/_Layout.cshtml]
+[c:/Users/ASUS/Desktop/LoginMeetingSystem/Login_MeetingSystem/LoginMeetingSystem/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-u5qy89azxo
