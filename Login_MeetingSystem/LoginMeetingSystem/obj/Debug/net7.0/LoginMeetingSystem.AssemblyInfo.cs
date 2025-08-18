@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoginMeetingSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f73636b4fbe0fae44d2d0d623a5db028d46db5a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+996585e6d07fdfc90ca45810169b01e055275027")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoginMeetingSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoginMeetingSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
