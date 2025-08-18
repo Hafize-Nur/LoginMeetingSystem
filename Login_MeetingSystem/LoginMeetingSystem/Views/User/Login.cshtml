@@ -2,27 +2,39 @@
 @{
     ViewData["Title"] = "Login";
 }
+<!-- Bootstrap CSS -->
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Custom site CSS -->
+<link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
 
-<h2>Login</h2>
+<div class="login-container">
+    <div class="card shadow-lg p-4 login-card">
+        <h2 class="text-center mb-4">Giriş Yap</h2>
 
-<form asp-action="Login" method="post">
-    <div class="form-group">
-        <label asp-for="Email"></label>
-        <input asp-for="Email" class="form-control" />
-        <span asp-validation-for="Email" class="text-danger"></span>
+        <form asp-action="Login" method="post">
+            <div class="form-group mb-3">
+                <label asp-for="Email" class="form-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Password" class="form-label"></label>
+                <input asp-for="Password" class="form-control" type="password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Giriş Yap</button>
+            <p class="text-center mt-3">
+                <a class="link" asp-controller="User" asp-action="Register">
+                    Hesabınız yok mu?
+                </a>
+            </p>
+        </form>
+
+        @if (ViewBag.Error != null)
+        {
+            <p class="text-danger text-center mt-2">@ViewBag.Error</p>
+        }
     </div>
-
-    <div class="form-group">
-        <label asp-for="Password"></label>
-        <input asp-for="Password" class="form-control" type="password" />
-        <span asp-validation-for="Password" class="text-danger"></span>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Giriş Yap</button>
-    <p> <a asp-controller="User" asp-action="Register">Hesabınız mı yok? Kayıt olmak için tıklayınız</a>.</p>
-</form>
-
-@if (ViewBag.Error != null)
-{
-    <p class="text-danger">@ViewBag.Error</p>
-}
+</div>

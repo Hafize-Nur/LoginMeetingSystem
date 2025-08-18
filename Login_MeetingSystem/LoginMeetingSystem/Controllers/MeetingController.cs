@@ -41,27 +41,37 @@ namespace LoginMeetingSystem.Controllers
             return View();
         }
 
-        // POST: Create form submit
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public IActionResult Create(Meeting meeting, List<IFormFile> documents)
         {
-            var userId = int.Parse(User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier).Value);
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
             meeting.UserId = userId;
 
             _context.Meetings.Add(meeting);
             _context.SaveChanges();
 
+            // Proje kök dizini (wwwroot yerine burada kök klasör)
+            var projectRoot = Directory.GetCurrentDirectory();
+            var documentsPath = Path.Combine(projectRoot, "Documents");
+
+            // Eğer klasör yoksa oluştur
+            if (!Directory.Exists(documentsPath))
+            {
+                Directory.CreateDirectory(documentsPath);
+            }
+
             foreach (var doc in documents)
             {
-                var path = Path.Combine(_env.WebRootPath, "uploads", doc.FileName);
-                using var stream = new FileStream(path, FileMode.Create);
-                doc.CopyTo(stream);
+                var filePath = Path.Combine(documentsPath, doc.FileName);
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    doc.CopyTo(stream);
+                }
 
                 _context.MeetingDocuments.Add(new MeetingDocument
                 {
                     MeetingId = meeting.Id,
-                    FilePath = "/uploads/" + doc.FileName,
+                    FilePath = Path.Combine("Documents", doc.FileName), // Veritabanına kaydetmek için
                     OriginalName = doc.FileName,
                     ContentType = doc.ContentType,
                     Size = doc.Length
@@ -71,6 +81,7 @@ namespace LoginMeetingSystem.Controllers
             _context.SaveChanges();
             return RedirectToAction("Index");
         }
+
 
         [HttpGet]
         public IActionResult Edit(int id)

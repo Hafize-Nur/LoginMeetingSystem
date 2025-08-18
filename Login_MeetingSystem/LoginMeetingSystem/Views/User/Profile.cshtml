@@ -1,20 +1,40 @@
 @model LoginMeetingSystem.Models.User
 
 @{
-    ViewData["Title"] = "Profle";
+    ViewData["Title"] = "Profile";
 }
 
-<h2>Hoşgeldiniz, @Model.FirstName @Model.LastName</h2>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
 
-<p>Email: @Model.Email</p>
-<p>Telefon: @Model.Phone</p>
+            <!-- Profil Kartı -->
+            <div class="card shadow-sm text-center">
+                <div class="card-body">
+                    <!-- Profil Fotoğrafı -->
+                    <img src="/Login_MeetingSystem/LoginMeetingSystem/Images/resim.jpg" class="rounded-circle mb-3"
+                        alt="Profile Image" style="width:120px; height:120px; object-fit:cover;" />
 
-<p>
-    <a asp-controller="Meeting" asp-action="Index" class="btn btn-primary">
-        Toplantı İşlemleri
-    </a>
-</p>
+                    <h4 class="card-title fw-bold">@Model.FirstName @Model.LastName</h4>
+                    <p class="text-muted mb-3">@Model.Email</p>
 
-<a asp-controller="Home" asp-action="Index" class="btn btn-secondary">
-    Çıkış Yap
-</a>
+                    <ul class="list-group list-group-flush text-start mb-3">
+                        <li class="list-group-item"><strong>Telefon:</strong> @Model.Phone</li>
+
+                    </ul>
+
+                    <!-- Butonlar -->
+                    <div class="d-flex justify-content-around">
+                        <a asp-controller="Meeting" asp-action="Index" class="btn btn-primary">
+                            Toplantılar
+                        </a>
+                        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">
+                            Çıkış Yap
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

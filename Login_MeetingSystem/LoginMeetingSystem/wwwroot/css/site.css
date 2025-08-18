@@ -9,14 +9,153 @@ html {
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #fb5a25;
 }
 
 html {
   position: relative;
   min-height: 100%;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+main {
+    flex: 1;
+}
+.navbar {
+    background-color:  #fb5a25;
+}
+
+footer {
+    background-color: #fb5a25 !important;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.bg-primary {
+    background-color: #fb5a25 !important;
+}
+
+.navbar .nav-link {
+    color:white !important;   
+}
+.link{
+   color: #fb5a25 !important;
+}
+.btn-primary {
+  color: #fff;
+  background-color:  #fb5a25;
+  border: none;
+  margin-bottom: 5px;
+  
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color:  #fb8925;
+  border-color:#fb8925;
+}
+
+.btn-secondary{
+color: #fff;
+  background-color:  #de1515;
+  border: none;
+  margin-bottom: 5px;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color:  #fb5a25;;
+  border-color:  #fb5a25;;
+}
+/* Ana sayfa */
+.welcome-container {
+    height: 60vh; 
+    text-align: center;
+}
+
+.welcome-text {
+    font-size: 3rem;         
+    font-weight: bold;      
+    color: #ff6600;         
+    font-family: "Segoe UI", sans-serif;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); 
+}
+/* Giriş sayfası */
+
+.login-container {
+  margin-top: 80px;
+    min-height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; 
+}
+
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    background: white;
+}
+
+/* Kayıt sayfası */
+.register-container {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; 
+}
+
+
+.register-card {
+    width: 100%;
+    max-width: 600px; 
+    border-radius: 12px;
+    background: white;
+}
+
+/* Profil sayfası*/
+.profile-container {
+    min-height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; 
+}
+
+
+.profile-card {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    background: white;
+}
+
+
+.w-45 {
+    width: 48%; 
+}
+.card {
+    border-radius: 12px;
+}
+
+.btn.w-45 {
+    width: 48%;
+}
+
+img.rounded-circle {
+    border: 3px solid #fb5a25; /* Profil fotoğraf çerçevesi turuncu */
+}
 
 body {
-  margin-bottom: 60px;
+    background-color: #f8f9fa; /* Hafif gri arka plan */
 }

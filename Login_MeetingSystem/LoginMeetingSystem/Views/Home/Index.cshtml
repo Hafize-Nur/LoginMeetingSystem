@@ -1,9 +1,11 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<!-- Bootstrap CSS -->
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Custom site CSS -->
+<link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
 
-<div class="text-center">
-    <h1 class="display-4">Hoşgeldiniz</h1>
-    <p> <a asp-controller="User" asp-action="Login">Giriş Yapmak için tıklayınız</a>.</p>
-    <p> <a asp-controller="User" asp-action="Register">Kayıt olmak için tıklayınız</a>.</p>
+<div class="welcome-container d-flex justify-content-center align-items-center">
+    <h1 class="welcome-text">Hoşgeldiniz</h1>
 </div>

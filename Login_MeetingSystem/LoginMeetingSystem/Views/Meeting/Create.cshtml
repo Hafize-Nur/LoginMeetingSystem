@@ -2,6 +2,8 @@
 @{
     ViewData["Title"] = "Create Meeting";
 }
+<!-- Custom site CSS -->
+<link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
 
 <h2>Create Meeting</h2>
 
@@ -35,4 +37,11 @@
     </div>
 
     <button type="submit" class="btn btn-primary">Save</button>
+
+
 </form>
+<p>
+    <a asp-controller="User" asp-action="Profile" class="btn btn-primary">
+        Anasayfaya dön
+    </a>
+</p>
