@@ -153,9 +153,9 @@ color: #fff;
 }
 
 img.rounded-circle {
-    border: 3px solid #fb5a25; /* Profil fotoğraf çerçevesi turuncu */
+    border: 3px solid #fb5a25; 
 }
 
 body {
-    background-color: #f8f9fa; /* Hafif gri arka plan */
+    background-color: #f8f9fa;
 }

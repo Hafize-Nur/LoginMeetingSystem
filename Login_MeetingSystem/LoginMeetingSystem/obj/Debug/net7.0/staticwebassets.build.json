@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ezosHbt50tduh8JcdafvNzNgbsw236Hqd1ESm1aETok=",
+  "Hash": "nIs4KWAYnWRcHlBS2+y27iUWtn8NaThw3PTH2+hwwUQ=",
   "Source": "LoginMeetingSystem",
   "BasePath": "_content/LoginMeetingSystem",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\Desktop\\LoginMeetingSystem\\Login_MeetingSystem\\LoginMeetingSystem\\wwwroot\\Images\\resim.jpg",
+      "SourceId": "LoginMeetingSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\LoginMeetingSystem\\Login_MeetingSystem\\LoginMeetingSystem\\wwwroot\\",
+      "BasePath": "_content/LoginMeetingSystem",
+      "RelativePath": "Images/resim.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\resim.jpg"
     },
     {
       "Identity": "C:\\Users\\ASUS\\Desktop\\LoginMeetingSystem\\Login_MeetingSystem\\LoginMeetingSystem\\wwwroot\\js\\site.js",

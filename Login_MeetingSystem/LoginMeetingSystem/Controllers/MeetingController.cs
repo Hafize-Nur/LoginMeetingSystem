@@ -18,10 +18,11 @@ namespace LoginMeetingSystem.Controllers
         }
 
         //Veritabanındaki kayıtlı toplantıları gösterme
+
+
         public IActionResult Index()
         {
-            if (!User.Identity.IsAuthenticated)
-                return RedirectToAction("Login", "User");
+
 
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
             if (userIdClaim == null)
@@ -43,7 +44,7 @@ namespace LoginMeetingSystem.Controllers
 
         [HttpPost]
         public IActionResult Create(Meeting meeting, List<IFormFile> documents)
-        {
+        {// toplantı bilgilerini kişi bilgisiyle ekliyor
             var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
             meeting.UserId = userId;
 
@@ -61,7 +62,7 @@ namespace LoginMeetingSystem.Controllers
             }
 
             foreach (var doc in documents)
-            {
+            {// toplantı için dosya ekleme
                 var filePath = Path.Combine(documentsPath, doc.FileName);
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
@@ -82,14 +83,14 @@ namespace LoginMeetingSystem.Controllers
             return RedirectToAction("Index");
         }
 
-
+        //kayıtlı toplantıları görmek için
         [HttpGet]
         public IActionResult Edit(int id)
         {
             var meeting = _context.Meetings.Find(id);
             return View(meeting);
         }
-
+        //toplantı güncellemek için
         [HttpPost]
         public IActionResult Edit(Meeting meeting)
         {
@@ -107,7 +108,7 @@ namespace LoginMeetingSystem.Controllers
             return RedirectToAction("Index");
         }
 
-
+        //toplantı silmek için
         public IActionResult Delete(int id)
         {
             var meeting = _context.Meetings.Find(id);
